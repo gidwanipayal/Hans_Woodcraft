@@ -543,33 +543,65 @@
                             <h1 class="display-5 mb-4">Free Quote</h1>
                         </div>
                         <p class="mb-4 pb-2">Request your no-obligation quote from Hans Woodcrafts today. Experience top-tier carpentry services tailored to your needs. Contact us for a custom estimate.</p>
-                        <form>
+                        <form id="myForm">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-12 col-sm-6">
+                                    <input type="phone" id="phone" class="form-control border-0" placeholder="Your Phone" style="height: 55px;">
+                                </div> -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-floating">
+                                        <input type = 'phone' class="form-control" id="phone" placeholder="Your Email">
+                                        <label for="email">Mobile</label>
+                                    </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
-                                    </select>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Special Note" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Description</label>
+                                </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit" >Send Message</button>
+                                    <script src="main.js"></script>
+                                    <!-- <button class="btn btn-primary w-100 py-3" type="submit"><a href="https://api.whatsapp.com/send?phone=+19452335139&text=urlencodedtext"></a>Send Message</button> -->
                                 </div>
                             </div>
                         </form>
+                        <div id="myModal" class="modal">
+                           
+                            <div class="modal-content">
+                                <span id="closeModal" style="float:right">&times;</span>
+                                <h2 style="color:#D7BA89;max-width: 100%;">Contact Us</h2>
+                                <p>Scan below QR code to reach out to us on WhatsApp</p>
+                                <p>Or Click on below button to open WhatsApp</p>
+                                <img src="img/WhatsapP QR.jpg" alt="WhatsApp QR" style="position:relative" width="200px", height="200px">
+                                <br>
+                                <button class="btn btn-primary py-3" type="submit" onclick=gotowhatsapp() style="width: 180px; height: 50px;">Open WhatsApp</button>
+                                <script src="main.js"></script>
+                            </div>
+                        </div>
+                        <script>
+                            document.getElementById("myForm").addEventListener("submit", function(event) {
+                                event.preventDefault(); // Prevent form submission
+                                document.getElementById("myModal").style.display = "block"; // Display modal
+                            });
+                    
+                            document.getElementById("closeModal").addEventListener("click", function() {
+                                document.getElementById("myModal").style.display = "none"; // Hide modal
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
