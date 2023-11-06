@@ -30,6 +30,21 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Georgia, serif;
+            font-size: medium;
+        }
+        h1,h4,h5 {
+            font-family: Georgia, serif;
+            font-size: larger;
+        }
+        h2 {
+            font-family: Georgia, serif;
+            font-size:x-large;
+        }
+    </style>
 </head>
 
 <body>
@@ -115,108 +130,145 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Our Projects</h1>
+                <h1 class="display-5 mb-5">Projects</h1>
             </div>
-            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Space Saving Carpentry</li>
-                        <li class="mx-2" data-filter=".second">Custom Carpentry</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/porfolio-1-bar.PNG" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/porfolio-1-bar.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/bar-remodeling.jpg" alt="">
                         </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Space Saving Carpentry</p>
-                            <h5 class="lh-base mb-0">Bar Modeling</a>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Space Saving Carpentry</h4>
+                            <!-- <p>Our general carpentry services encompass a wide range of skilled solutions to meet your woodworking needs, from repairs to custom creations.</p> -->
+                            <button id="modalBtn1" class="button" onclick="openModal()">Read More</button>
+                            
+                                <!-- The Modal -->
+                                    <div id="simpleModal1" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2>Bar Modeling</h2>
+                                                <span class="closeBtn">&times;</span>
+                                                
+                                            </div>
+                                            <div class="modal-body">
+                                                <p></p>
+                                                <p></p>
+                                                <p>If you have a vision in mind for your ideal bar, you've come to the right place. At Hans Woodcraft, we are here to turn your dreams into tangible, breathtaking reality.</p>
+                                                        <p>We believe that your bar should be a reflection of your style, taste, and the ambiance you wish to create. </p>
+                                                        <p>That's why we offer an extensive range of design possibilities. Whether you're inclined towards the timeless charm of a classic bar, the cozy allure of a rustic setting, the sleek elegance of a modern design, or any other style that resonates with you, we've got you covered.</p>
+                                                        <!-- <img src="img/bar.jpg"> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- First Modal  -->
+                                <script src="main.js"></script>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/shoes.jpg" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Custom Carpentry</h4>
+                            <!-- <p>Rediscover the beauty of your furniture with our experienced renovation and remodeling services, which can breathe new life into your beloved pieces.</p> -->
+                            <button id="modalBtn2" class="button" onclick="openModal2()">Read More</button>
+                            
+                                <!-- The Modal -->
+                                    <div id="simpleModal2" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2>Shoes and Clothes Rack</h2>
+                                                <span class="closeBtn">&times;</span>
+                                                
+                                            </div>
+                                            <div class="modal-body">
+                                                <p></p>
+                                                <p></p>
+                                                <p>
+                                                </p>
+                                                <p style="text-align:center">Discover Ingenious Space-Saving Wooden Clothes and Shoes Racks - Ideal Solutions for Every Home!</p>
+                                                        <p style="text-align:center">Maximize your space with our bespoke wooden clothes and shoes racks. Crafted meticulously from fine wood, our uniquely designed racks offer optimal storage solutions for your stylish collection. Not just storage, but elegance and functionality intertwine in every piece, making them a perfect fit for any home décor. 
+                                                            Experience the beauty of sustainable wood solutions combined with expert craftsmanship – giving you durable, eco-friendly, and visually appealing storage solutions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- First Modal  -->
+                                <script src="main.js"></script>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/bookshelf.jpeg" alt="">
                         </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling (Desks)</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3-shoes.PNG" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1-bar.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Space Saving Carpentry</p>
-                            <h5 class="lh-base mb-0">Shoes and Clothes rack</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Space Saving Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Custom Carpentry</h4>
+                            <!-- <p>Elevate your space with our artisanal furniture manufacturing services, where every piece is a testament to quality craftsmanship and creativity. </p> -->
+                            <button id="modalBtn3" class="button" onclick="openModal3()">Read More</button>
+                            
+                                <!-- The Modal -->
+                                    <div id="simpleModal3" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2>Book Shelf</h2>
+                                                <span class="closeBtn">&times;</span>
+                                                
+                                            </div>
+                                            <div class="modal-body">
+                                                
+                                                <p style="text-align:center">Unlock Elegance and Functionality: Discover Our Unique Bookshelf Creations</p>
+                                                    <p style="text-align:center">Our custom carpentry service introduces an exclusive collection of personalized bookshelf designs to transform your space. Crafted meticulously to suit your style and spatial requirements, our bespoke bookshelves offer both elegance and functionality. With an array of customizable options, from wood selection to dimensions and finishes, you get tailor-made solutions for your storage needs. 
+                                                        Every piece is meticulously created, promising not just storage but a distinctive statement piece for your home or office.</p>
+                                                    <!-- <img src="img/bookshelf2.jpeg" width="600" height="600"> -->
+                                                </div>
+                                        </div>
+                                    </div>
+                                <!-- First Modal  -->
+                                <script src="main.js"></script>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
+                
+                <!-- <button type="button" class="learn-more-button" onclick="window.location.href='services.html'">Learn More</button> -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/custom.jpg" alt="">
                         </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Custom Carpentry</h4>
+                            <!-- <p>Elevate your space with the timeless elegance of wooden flooring, expertly installed by our dedicated team in Dallas.</p> -->
+                            <button id="modalBtn4" class="button" onclick="openModal4()">Read More</button>
+                            
+                                <!-- The Modal -->
+                                    <div id="simpleModal4" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2>Wooden Furniture Manufacturing and Remodeling</h2>
+                                                <span class="closeBtn">&times;</span>
+                                                
+                                            </div>
+                                            <div class="modal-body">
+                                                <p style="text-align:center">Unlock Timeless Elegance: Bespoke Wood Furniture Crafted to Perfection</p>
+                                                        <p style="text-align:center">Our wood furniture manufacturing and remodeling service brings life to your furnishing dreams. Whether it's creating custom pieces or reviving your existing treasures, our artisans blend tradition and modernity to produce furniture that resonates with your unique style. 
+                                                            Custom Creations Tailored to You, Revitalize, Refurbish, Renew, Transform Your Space with Our Artistry.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- First Modal  -->
+                                <script src="main.js"></script>
                         </div>
                     </div>
                 </div>
+                
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -270,7 +322,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Hans WoodCraft</a>, All Right Reserved.
+                            &copy;2023 <a class="border-bottom" href="#">Hans WoodCraft</a>, All Right Reserved.
                         </div>
                     </div>
                 </div>

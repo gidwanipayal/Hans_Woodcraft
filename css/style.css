@@ -273,7 +273,7 @@
     padding-left: 0;
 }
 
-.section-title h1::before,
+/* .section-title h1::before,
 .section-title h1::after {
     position: absolute;
     content: "";
@@ -281,7 +281,7 @@
     height: 5px;
     bottom: 0;
     background: var(--dark);
-}
+} */
 
 .section-title h1::before {
     left: 0;
@@ -605,10 +605,11 @@
 
 .footer .btn.btn-link::before {
     position: relative;
-    content: "\f105";
+    content: "\f111";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
+    font-size: 10px;
 }
 
 .footer .btn.btn-link:hover {
@@ -633,7 +634,7 @@
 
 /* The Modal (background) */
 .button{
-    background-color: coral;
+    background-color: #AB7442;
     padding: 1em 2em;
     color: white;
     border: 0;
@@ -698,4 +699,27 @@
 @keyframes modalopen{
     from{opacity: 0}
     to{opacity: 1}
+}
+
+
+/* Open modal for contact */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+#closeModal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
