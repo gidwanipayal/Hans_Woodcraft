@@ -130,3 +130,24 @@ function openForm() {
     $('#myModal').modal('show');
     e.preventDefault();
   });
+
+  function toggleTheme() {
+    const body = document.body;
+
+    // Toggle the 'dark-theme' class on the body
+    body.classList.toggle('dark-theme');
+
+    // Check if the 'dark-theme' class is present
+    const isDarkMode = body.classList.contains('dark-theme');
+
+    // Set the theme preference in local storage
+    localStorage.setItem('darkMode', isDarkMode);
+}
+
+// Check the theme preference from local storage on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+    // Set the initial theme based on the user's preference
+    document.body.classList.toggle('dark-theme', isDarkMode);
+});
