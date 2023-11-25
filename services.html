@@ -171,7 +171,7 @@
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">General Carpentry</h4>
                             <p>Our general carpentry services encompass a wide range of skilled solutions to meet your woodworking needs, from repairs to custom creations.</p>
-                            <button id="modalBtn1" class="button" onclick="openModal()">Read More</button>
+                            <button id="modalBtn1" class="button" onclick="openModal()">View More</button>
                             
                                 <!-- The Modal -->
                                     <div id="simpleModal1" class="modal">
@@ -205,7 +205,7 @@
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">Furniture Manufacturing</h4>
                             <p>Elevate your space with our artisanal furniture manufacturing services, where every piece is a testament to quality craftsmanship and creativity. </p>
-                            <button id="modalBtn2" class="button" onclick="openModal2()">Read More</button>
+                            <button id="modalBtn2" class="button" onclick="openModal2()">View More</button>
                             
                                 <!-- The Modal -->
                                     <div id="simpleModal2" class="modal">
@@ -236,7 +236,7 @@
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">Furniture Remodeling</h4>
                             <p>Rediscover the beauty of your furniture with our experienced renovation and remodeling services, which can breathe new life into your beloved pieces.</p>
-                            <button id="modalBtn3" class="button" onclick="openModal3()">Read More</button>
+                            <button id="modalBtn3" class="button" onclick="openModal3()">View More</button>
                             
                                 <!-- The Modal -->
                                     <div id="simpleModal3" class="modal">
@@ -272,7 +272,7 @@
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">Wooden Floor</h4>
                             <p>Transform your living or working environment with the enduring charm of wooden flooring, installed by our skilled and dedicated team in Dallas. </p>
-                            <button id="modalBtn4" class="button" onclick="openModal4()">Read More</button>
+                            <button id="modalBtn4" class="button" onclick="openModal4()">View More</button>
                             
                                 <!-- The Modal -->
                                     <div id="simpleModal4" class="modal">
@@ -303,7 +303,7 @@
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">Wooden Furniture</h4>
                             <p>Explore the artistry of handcrafted wooden furniture, where every piece is a testament to our passion for fine woodworking.</p>
-                            <button id="modalBtn5" class="button" onclick="openModal5()">Read More</button>
+                            <button id="modalBtn5" class="button" onclick="openModal5()">View More</button>
                             
                                 <!-- The Modal -->
                                     <div id="simpleModal5" class="modal">
@@ -342,7 +342,7 @@
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">Custom Work</h4>
                             <p>Unleash your creativity with our bespoke woodwork creations, tailored to your vision and brought to life by our skilled artisans.</p>
-                            <button id="modalBtn6" class="button" onclick="openModal6()">Read More</button>
+                            <button id="modalBtn6" class="button" onclick="openModal6()">View More</button>
                             
                                 <!-- The Modal -->
                                     <div id="simpleModal6" class="modal">
@@ -408,10 +408,18 @@
                                         <label for="email">Mobile</label>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6">
+                                <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
+                                        <!-- <input list="text" class="form-control" id="subject" placeholder="Subject"> -->
+                                        <input id="subject" class='form-control' placeholder="Choose a Service" name="subject" list="cities" required>
+                                        <datalist id="cities">
+                                            <option value="General Carpentry">
+                                            <option value="Custom Designs">
+                                            <option value="Repairing">
+                                            <option value="Others">
+                                        </datalist>
+                                        <label for="subject">Choose a Service</label>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -507,6 +515,7 @@
                                 <!-- <p class="mb-2"><a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hans_woodcraft2002/"></a><i class= "fa fa-instagram me-3"></i>Hans Woodcraft</p> -->
                                 <div class="d-flex pt-2">
                                     <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hans_woodcraft2002/"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="mailto:hanscarpenter21@gmail.com"><i class="fa fa-envelope"></i></a>
                                     <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a> -->
                                     <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
                                     <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a> -->

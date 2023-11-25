@@ -86,7 +86,10 @@
             padding: 15px;
             color: #FFFFFF;
         }
-
+        select{
+            margin-left: 5%;
+            
+        }
     </style>
 </head>
 
@@ -156,20 +159,28 @@
                             <div class="row g-4 justify-content-center" >
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                         <label for="name">Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type = 'phone' class="form-control" id="phone" placeholder="Your Phone">
+                                        <input type = 'phone' class="form-control" id="phone" placeholder="Your Phone" required>
                                         <label for="email">Mobile</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
+                                        <!-- <input list="text" class="form-control" id="subject" placeholder="Subject"> -->
+                                        <input id="subject" class='form-control' placeholder="Choose a Service" name="subject" list="cities" required>
+                                        <datalist id="cities">
+                                            <option value="General Carpentry">
+                                            <option value="Custom Designs">
+                                            <option value="Repairing">
+                                            <option value="Others">
+                                        </datalist>
+                                        <label for="subject">Choose a Service</label>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -239,6 +250,7 @@
                         <!-- <p class="mb-2"><a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hans_woodcraft2002/"></a><i class= "fa fa-instagram me-3"></i>Hans Woodcraft</p> -->
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hans_woodcraft2002/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="mailto:hanscarpenter21@gmail.com"><i class="fa fa-envelope"></i></a>
                             <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a> -->
                             <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
                             <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a> -->

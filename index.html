@@ -48,6 +48,7 @@
             width:100%;
             height: 650px;
         }
+        
     </style>
 </head>
 
@@ -141,8 +142,8 @@
                             <div class="col-12 col-lg-8 text-center">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To Hans WoodCraft</h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Best Carpenter & Craftsman Services</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Want to know how our services can cater your needs? Read more about what we do</p>
-                                <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Elevate your space with Hans Woodcrafts – top-tier carpentry services.</p>
+                                <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">View More</a>
                                 <!-- <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
                             </div>
                         </div>
@@ -156,8 +157,8 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-8 text-center">
                                 <!-- <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To WooDY</h5> -->
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Come Say hi to Us</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Input your name and number and reach out to us on WhatsApp and Check our Gallery</p>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Have an idea? Let's work!</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Transform your vision into reality. Contact us for exceptional carpentry</p>
                                 <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Contact Us</a>
                                 <a href="gallery.html" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">View Gallery</a>
                                 
@@ -282,7 +283,7 @@
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">General Carpentry</h4>
                             <p>Our general carpentry services encompass a wide range of skilled solutions to meet your woodworking needs, from repairs to custom creations.</p>
-                            <a class="fw-medium" href="services.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            <a class="fw-medium" href="services.html">View More<i class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -294,7 +295,7 @@
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">Furniture Manufacturing</h4>
                             <p>Elevate your space with our artisanal furniture manufacturing services, where every piece is a testament to quality craftsmanship and creativity. </p>
-                            <a class="fw-medium" href="services.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            <a class="fw-medium" href="services.html">View More<i class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -306,7 +307,7 @@
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">Furniture Remodeling</h4>
                             <p>Restore the beauty of your furniture with our experienced renovation and remodeling services, which can breathe new life into your beloved pieces.</p>
-                            <a class="fw-medium" href="services.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            <a class="fw-medium" href="services.html">View More<i class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -566,10 +567,18 @@
                                         <label for="email">Mobile</label>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6">
+                                <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
+                                        <!-- <input list="text" class="form-control" id="subject" placeholder="Subject"> -->
+                                        <input id="subject" class='form-control' placeholder="Choose a Service" name="subject" list="cities" required>
+                                        <datalist id="cities">
+                                            <option value="General Carpentry">
+                                            <option value="Custom Designs">
+                                            <option value="Repairing">
+                                            <option value="Others">
+                                        </datalist>
+                                        <label for="subject">Choose a Service</label>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -742,6 +751,7 @@
                     <!-- <p class="mb-2"><a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hans_woodcraft2002/"></a><i class= "fa fa-instagram me-3"></i>Hans Woodcraft</p> -->
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hans_woodcraft2002/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="mailto:hanscarpenter21@gmail.com"><i class="fa fa-envelope"></i></a>
                         <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a> -->
                         <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
                         <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a> -->

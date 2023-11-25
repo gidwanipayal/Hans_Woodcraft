@@ -44,6 +44,24 @@
             font-family: Georgia, serif;
             font-size:x-large;
         }
+        * {
+        box-sizing: border-box;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
     </style>
 </head>
 
@@ -158,6 +176,27 @@
                                                         <p>We believe that your bar should be a reflection of your style, taste, and the ambiance you wish to create. </p>
                                                         <p>That's why we offer an extensive range of design possibilities. Whether you're inclined towards the timeless charm of a classic bar, the cozy allure of a rustic setting, the sleek elegance of a modern design, or any other style that resonates with you, we've got you covered.</p>
                                                         <!-- <img src="img/bar.jpg"> -->
+                                                        <div class="row">
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Elegant woodwork</h2>
+                                                              <br>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/bar.jpg" width="80%" height="70%">
+                                                            </div>
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Whimsical Designs</h2>
+                                                              <br>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/bar_model.PNG" width="80%" height="70%">
+                                                            </div>
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Rustic Woodwork</h2>
+                                                              <br>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/bar_model_3.PNG" width="80%" height="70%">
+                                                            
+                                                            </div>
+                                                          </div>
                                             </div>
                                         </div>
                                     </div>
@@ -173,7 +212,7 @@
                             <img class="img-fluid" src="img/shoes.jpg" alt="">
                         </div>
                         <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Custom Carpentry</h4>
+                            <h4 class="mb-3">Space Saving Carpentry</h4>
                             <!-- <p>Rediscover the beauty of your furniture with our experienced renovation and remodeling services, which can breathe new life into your beloved pieces.</p> -->
                             <button id="modalBtn2" class="button" onclick="openModal2()">Read More</button>
                             
@@ -193,7 +232,28 @@
                                                 <p style="text-align:center">Discover Ingenious Space-Saving Wooden Clothes and Shoes Racks - Ideal Solutions for Every Home!</p>
                                                         <p style="text-align:center">Maximize your space with our bespoke wooden clothes and shoes racks. Crafted meticulously from fine wood, our uniquely designed racks offer optimal storage solutions for your stylish collection. Not just storage, but elegance and functionality intertwine in every piece, making them a perfect fit for any home décor. 
                                                             Experience the beauty of sustainable wood solutions combined with expert craftsmanship – giving you durable, eco-friendly, and visually appealing storage solutions.</p>
-                                            </div>
+                                                            <div class="row">
+                                                                <div class="column" style="background-color:#D7BA89;">
+                                                                  <h2>Charming Designs</h2>
+                                                                  <br>
+                                                                  <!-- <p>Some text..</p> -->
+                                                                  <img src="img/shoes2.PNG" width="80%" height="70%">
+                                                                </div>
+                                                                <div class="column" style="background-color:#D7BA89;">
+                                                                  <h2>Functional Elegance</h2>
+                                                                  <br>
+                                                                  <!-- <p>Some text..</p> -->
+                                                                  <img src="img/shoes3.PNG" width="80%" height="70%">
+                                                                </div>
+                                                                <div class="column" style="background-color:#D7BA89;">
+                                                                  <h2>Timeless Artistry</h2>
+                                                                  <br>
+                                                                  <!-- <p>Some text..</p> -->
+                                                                  <img src="img/shoes1.jpg" width="80%" height="70%">
+                                                                
+                                                                </div>
+                                                              </div>
+                                                        </div>
                                         </div>
                                     </div>
                                 <!-- First Modal  -->
@@ -224,13 +284,35 @@
                                                 <p style="text-align:center">Unlock Elegance and Functionality: Discover Our Unique Bookshelf Creations</p>
                                                     <p style="text-align:center">Our custom carpentry service introduces an exclusive collection of personalized bookshelf designs to transform your space. Crafted meticulously to suit your style and spatial requirements, our bespoke bookshelves offer both elegance and functionality. With an array of customizable options, from wood selection to dimensions and finishes, you get tailor-made solutions for your storage needs. 
                                                         Every piece is meticulously created, promising not just storage but a distinctive statement piece for your home or office.</p>
-                                                    <!-- <img src="img/bookshelf2.jpeg" width="600" height="600"> -->
+                                                        <div class="row">
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Extraordinary Designs</h2>
+                                                              <br>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/bookshelf2.jpeg" width="80%" height="70%">
+                                                            </div>
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Wholesome Woodwork</h2>
+                                                              <br>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/bookshelf3.jpeg" width="80%" height="70%">
+                                                            </div>
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Artisan's Chosen</h2>
+                                                              <br>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/bookshelf4.PNG" width="80%" height="70%">
+                                                            
+                                                            </div>
+                                                          </div>
                                                 </div>
                                         </div>
                                     </div>
                                 <!-- First Modal  -->
                                 <script src="main.js"></script>
                         </div>
+
+                        
                     </div>
                 </div>
                 
@@ -257,7 +339,28 @@
                                                 <p style="text-align:center">Unlock Timeless Elegance: Bespoke Wood Furniture Crafted to Perfection</p>
                                                         <p style="text-align:center">Our wood furniture manufacturing and remodeling service brings life to your furnishing dreams. Whether it's creating custom pieces or reviving your existing treasures, our artisans blend tradition and modernity to produce furniture that resonates with your unique style. 
                                                             Custom Creations Tailored to You, Revitalize, Refurbish, Renew, Transform Your Space with Our Artistry.</p>
-                                            </div>
+                                                            <div class="row">
+                                                                <div class="column" style="background-color:#D7BA89;">
+                                                                  <h2>ExtraOrdinary Designs</h2>
+                                                                  <br>
+                                                                  <!-- <p>Some text..</p> -->
+                                                                  <img src="img/project_4.PNG" width="80%" height="70%">
+                                                                </div>
+                                                                <div class="column" style="background-color:#D7BA89;">
+                                                                  <h2>Exquisite work</h2>
+                                                                  <br>
+                                                                  <!-- <p>Some text..</p> -->
+                                                                  <img src="img/project_4_1.PNG" width="80%" height="70%">
+                                                                </div>
+                                                                <div class="column" style="background-color:#D7BA89;">
+                                                                  <h2>Artisan's Works</h2>
+                                                                  <br>
+                                                                  <!-- <p>Some text..</p> -->
+                                                                  <img src="img/project_4_2.PNG" width="80%" height="70%">
+                                                                
+                                                                </div>
+                                                              </div>
+                                                        </div>
                                         </div>
                                     </div>
                                 <!-- First Modal  -->
@@ -265,11 +368,113 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Fifth project -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/tv_cabinet_1.PNG" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Custom Carpentry</h4>
+                            <!-- <p>Elevate your space with our artisanal furniture manufacturing services, where every piece is a testament to quality craftsmanship and creativity. </p> -->
+                            <button id="modalBtn5" class="button" onclick="openModal5()">Read More</button>
+                            
+                                <!-- The Modal -->
+                                    <div id="simpleModal5" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header ">
+                                                <h2>TV Cabinets</h2>
+                                                <span class="closeBtn">&times;</span>
+                                                
+                                            </div>
+                                            <div class="modal-body">
+                                                
+                                                <p style="text-align:center">Crafting Timeless TV Cabinets for Your Home</p>
+                                                    <p style="text-align:center">Discover the artistry of woodworking at its finest with [Woodworker's Name]. As a master craftsman, Hans Woodcraft brings passion, skill, and creativity together to design TV cabinets that redefine your living space.
+                                                        Explore our portfolio and witness the fusion of craftsmanship, design, and your unique vision. Whether you seek a modern centerpiece or a rustic charm, Hans Woodcraft is your partner in creating enduring woodworking masterpieces.</p>
+                                                        <div class="row">
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Bespoke Designs</h2>
+                                                              <br>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/tv_cabinet.jpeg" width="80%" height="70%">
+                                                            </div>
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Artisanal excellence</h2>
+                                                              <br>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/cabinet.PNG" width="80%" height="70%">
+                                                            </div>
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Custom Finishes</h2>
+                                                              <br>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/tv_cabinet_1.webp" width="80%" height="70%">
+                                                            
+                                                            </div>
+                                                          </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                <!-- First Modal  -->
+                                <script src="main.js"></script>
+                        </div>
+                
                 
                     </div>
                 </div>
-
+                <!-- Sixth project -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/bookshelf.jpeg" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Custom Carpentry</h4>
+                            <!-- <p>Elevate your space with our artisanal furniture manufacturing services, where every piece is a testament to quality craftsmanship and creativity. </p> -->
+                            <button id="modalBtn6" class="button" onclick="openModal6()">Read More</button>
+                            
+                                <!-- The Modal -->
+                                    <div id="simpleModal6" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2>TV Cabinet</h2>
+                                                <span class="closeBtn">&times;</span>
+                                                
+                                            </div>
+                                            <div class="modal-body">
+                                                
+                                                <p style="text-align:center">Unlock Elegance and Functionality: Discover Our Unique Bookshelf Creations</p>
+                                                    <p style="text-align:center">Our custom carpentry service introduces an exclusive collection of personalized bookshelf designs to transform your space. Crafted meticulously to suit your style and spatial requirements, our bespoke bookshelves offer both elegance and functionality. With an array of customizable options, from wood selection to dimensions and finishes, you get tailor-made solutions for your storage needs. 
+                                                        Every piece is meticulously created, promising not just storage but a distinctive statement piece for your home or office.</p>
+                                                        <div class="row">
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Unique Design Philosophy</h2>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/bookshelf2.jpeg" width="80%" height="70%">
+                                                            </div>
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>Personalized Services</h2>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/bookshelf3.jpeg" width="80%" height="70%">
+                                                            </div>
+                                                            <div class="column" style="background-color:#D7BA89;">
+                                                              <h2>unparalleled craftsmanship</h2>
+                                                              <!-- <p>Some text..</p> -->
+                                                              <img src="img/bookshelf4.PNG" width="80%" height="70%">
+                                                            
+                                                            </div>
+                                                          </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                <!-- First Modal  -->
+                                <script src="main.js"></script>
+                        </div>
             </div>
+
+            
         </div>
     </div>
     <!-- Projects End -->
@@ -287,6 +492,7 @@
                                 <!-- <p class="mb-2"><a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hans_woodcraft2002/"></a><i class= "fa fa-instagram me-3"></i>Hans Woodcraft</p> -->
                                 <div class="d-flex pt-2">
                                     <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hans_woodcraft2002/"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="mailto:hanscarpenter21@gmail.com"><i class="fa fa-envelope"></i></a>
                                     <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a> -->
                                     <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
                                     <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a> -->
