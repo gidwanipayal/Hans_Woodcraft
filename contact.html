@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -33,15 +33,15 @@
 
     <style>
         body {
-            font-family: Poppins, serif;
+            font-family: Georgia, serif;
             font-size: medium;
         }
         h1,h4,h5 {
-            font-family: Poppins, serif;
+            font-family: Georgia, serif;
             font-size: larger;
         }
         h2 {
-            font-family: Poppins, serif;
+            font-family: Georgia, serif;
             font-size:x-large;
         }
 
@@ -78,7 +78,7 @@
         }
         .modal-content:h2{
         margin: 0;
-        color: #FFFFFF;
+        color: #FFFFFF;    
         }
 
         .modal-header{
@@ -86,7 +86,10 @@
             padding: 15px;
             color: #FFFFFF;
         }
-
+        select{
+            margin-left: 5%;
+            
+        }
     </style>
 </head>
 
@@ -119,7 +122,7 @@
                 <a href="services.html" class="nav-item nav-link">Services</a>
                 <a href="project.html" class="nav-item nav-link">Portfolio</a>
             </div>
-
+                
         </div>
             <!-- <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a> -->
     </nav>
@@ -156,20 +159,28 @@
                             <div class="row g-4 justify-content-center" >
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                         <label for="name">Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type = 'phone' class="form-control" id="phone" placeholder="Your Phone">
+                                        <input type = 'phone' class="form-control" id="phone" placeholder="Your Phone" required>
                                         <label for="email">Mobile</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
+                                        <!-- <input list="text" class="form-control" id="subject" placeholder="Subject"> -->
+                                        <input id="subject" class='form-control' placeholder="Choose a Service" name="subject" list="cities" required>
+                                        <datalist id="cities">
+                                            <option value="General Carpentry">
+                                            <option value="Custom Designs">
+                                            <option value="Repairing">
+                                            <option value="Others">
+                                        </datalist>
+                                        <label for="subject">Choose a Service</label>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -186,7 +197,7 @@
                             </div>
                         </form>
                         <div id="myModal" class="modal">
-
+                           
                             <div class="modal-content">
                                 <span id="closeModal" style="float:right">&times;</span>
                                 <h2 style="color:#D7BA89;max-width: 100%;">Contact Us</h2>
@@ -203,7 +214,7 @@
                                 event.preventDefault(); // Prevent form submission
                                 document.getElementById("myModal").style.display = "block"; // Display modal
                             });
-
+                    
                             document.getElementById("closeModal").addEventListener("click", function() {
                                 document.getElementById("myModal").style.display = "none"; // Hide modal
                             });
@@ -239,6 +250,7 @@
                         <!-- <p class="mb-2"><a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hans_woodcraft2002/"></a><i class= "fa fa-instagram me-3"></i>Hans Woodcraft</p> -->
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hans_woodcraft2002/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="mailto:hanscarpenter21@gmail.com"><i class="fa fa-envelope"></i></a>
                             <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a> -->
                             <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
                             <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a> -->
@@ -267,7 +279,7 @@
                             <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                             <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                         </div>
-                    </div -->
+                    </div --> 
                 </div>
             </div>
             <div class="container">

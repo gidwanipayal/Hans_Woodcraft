@@ -111,7 +111,7 @@ function gotowhatsapp() {
     var subject = document.getElementById("subject").value;
     var message = document.getElementById("message").value;
 
-    var url = "https://wa.me/19452335139?text=" 
+    var url = "https://wa.me/14692316355?text=" 
     + "Hey, This is " + name + ". I need help with: "
      + subject  + "%0a"
     +  message; 
@@ -130,6 +130,7 @@ function openForm() {
     $('#myModal').modal('show');
     e.preventDefault();
   });
+
 
   function toggleTheme() {
     const body = document.body;
