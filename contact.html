@@ -117,10 +117,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
                 <a href="services.html" class="nav-item nav-link">Services</a>
                 <a href="project.html" class="nav-item nav-link">Portfolio</a>
-                <a href="about.html" class="nav-item nav-link">About Us</a>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact Us</a> -->
             </div>
                 
         </div>
@@ -165,8 +166,8 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type = 'phone' class="form-control" id="phone" placeholder="Your Phone" required>
-                                        <label for="email">Mobile</label>
+                                        <input type = 'tel' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" id="phone" placeholder="Your Phone" required>
+                                        <label for="mobile">Mobile (000-000-0000)</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -203,7 +204,7 @@
                                 <h2 style="color:#D7BA89;max-width: 100%;">Contact Us</h2>
                                 <p>Scan below QR code to reach out to us on WhatsApp</p>
                                 <p>Or Click on below button to open WhatsApp</p>
-                                <img src="img/WhatsapP QR.jpg" alt="WhatsApp QR" style="position:relative" width="200px", height="200px">
+                                <img src="img/WhatsapP QR.jpg" alt="WhatsApp QR" style="position:relative" width="250px", height="250px">
                                 <br>
                                 <button class="btn btn-primary py-3" type="submit" onclick=gotowhatsapp() style="width: 180px; height: 50px;">Open WhatsApp</button>
                                 <script src="main.js"></script>
