@@ -676,6 +676,7 @@
 .modal-header{
     /* position: fixed; */
     background: #D7BA89;
+    width: 100%;
     padding: 15px;
     color: #FFFFFF;
 }
